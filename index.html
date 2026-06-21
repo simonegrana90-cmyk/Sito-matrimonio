@@ -905,22 +905,8 @@
     padding: 2rem;
   }
 
-  /* ===== HUNT TEASER ===== */
-  #hunt-teaser {
-    background: var(--forest);
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-
-  .hunt-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 1.2rem;
-    color: var(--cream);
-    margin-bottom: 1.5rem;
-  }
-
-  .hunt-btn {
+  /* ===== ALBUM BUTTON ===== */
+  .album-btn {
     display: inline-block;
     border: 1.5px solid var(--gold);
     color: var(--gold-light);
@@ -932,7 +918,7 @@
     transition: all 0.3s;
   }
 
-  .hunt-btn:hover { background: var(--gold); color: var(--navy); }
+  .album-btn:hover { background: var(--gold); color: var(--navy); }
 
   /* ===== FOOTER ===== */
   footer {
@@ -1057,8 +1043,6 @@
     .palette-swatches { gap: 0.6rem; }
     .swatch-color { width: 44px; height: 44px; }
 
-    /* Hunt btn full width */
-    .hunt-btn { display: block; margin: 0 auto; max-width: 240px; }
   }
 
   /* EN/IT toggle */
@@ -1341,6 +1325,15 @@
     <div class="gallery-item reveal"><img src="https://i.ibb.co/nNWvSybm/Whats-App-Image-2026-05-18-at-22-43-38.jpg" alt=""></div>
     <div class="gallery-item reveal"><img src="https://i.ibb.co/Cs15nzY5/Whats-App-Image-2026-05-18-at-22-45-52.jpg" alt=""></div>
   </div>
+
+  <!-- Album button -->
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="https://drive.google.com/drive/folders/1TkyWixbu7lVwvcCsnAq4v1P2iUqx0x8p?usp=sharing"
+       class="album-btn" target="_blank" rel="noopener">
+      <span data-it>GUARDA LE FOTO DEL MATRIMONIO</span>
+      <span data-en>VIEW THE WEDDING PHOTOS</span>
+    </a>
+  </div>
 </section>
 
 <!-- QUOTE 2 -->
@@ -1419,10 +1412,24 @@
     <div class="prog-day active" id="prog-fri">
       <div class="prog-day-title">FRIDAY 31 JULY 2026</div>
       <div class="prog-event reveal">
-        <div class="prog-time">🔧</div>
+        <div class="prog-time">3:00 PM</div>
         <div class="prog-desc">
-          <h4>DETAILS COMING SOON</h4>
-          <p>We're still working on the details for Friday — check back soon!</p>
+          <h4>BELLAVISTA WINERY VISIT</h4>
+          <p>For those joining the winery visit, we will meet directly at Bellavista at 3:00 PM. The winery is very close to L'Albereta and can be reached easily on foot.</p>
+        </div>
+      </div>
+      <div class="prog-event reveal">
+        <div class="prog-time">After the visit</div>
+        <div class="prog-desc">
+          <h4>RETURN TO L'ALBERETA</h4>
+          <p>The visit should last around two hours. Afterwards, we will walk back to L'Albereta. Guests staying at the hotel can relax, change, or do whatever they wish before dinner.</p>
+        </div>
+      </div>
+      <div class="prog-event reveal">
+        <div class="prog-time">Evening</div>
+        <div class="prog-desc">
+          <h4>DINNER AT LA FILIALE</h4>
+          <p>Later in the evening, we will all meet at La Filiale, where the entire pizzeria will be reserved just for our group. La Filiale is right next to L'Albereta, so everyone can walk there easily. The exact timing will be shared on the day.</p>
         </div>
       </div>
     </div>
@@ -1476,10 +1483,31 @@
     <div class="prog-day" id="prog-sun">
       <div class="prog-day-title">SUNDAY 2 AUGUST 2026</div>
       <div class="prog-event reveal">
-        <div class="prog-time">🔧</div>
+        <div class="prog-time">5:00 PM</div>
         <div class="prog-desc">
-          <h4>DETAILS COMING SOON</h4>
-          <p>We're still working on the details for Sunday — check back soon!</p>
+          <h4>PRIVATE TRANSFER TO SULZANO</h4>
+          <p>A private bus or shuttle will collect us from L'Albereta and take us to Sulzano.</p>
+        </div>
+      </div>
+      <div class="prog-event reveal">
+        <div class="prog-time">In Sulzano</div>
+        <div class="prog-desc">
+          <h4>PRIVATE BOAT TOUR ON LAKE ISEO</h4>
+          <p>From Sulzano, a private boat will be waiting for us for a panoramic tour of the three islands of Lake Iseo, lasting approximately one hour.</p>
+        </div>
+      </div>
+      <div class="prog-event reveal">
+        <div class="prog-time">7:30 PM</div>
+        <div class="prog-desc">
+          <h4>DINNER AT LA FORESTA</h4>
+          <p>At 7:30 PM, we will arrive directly at La Foresta by boat, docking at the restaurant's pier. We will then enjoy dinner at sunset on the lake.</p>
+        </div>
+      </div>
+      <div class="prog-event reveal">
+        <div class="prog-time">After dinner</div>
+        <div class="prog-desc">
+          <h4>RETURN TO L'ALBERETA</h4>
+          <p>After dinner, the private bus will take everyone back to L'Albereta.</p>
         </div>
       </div>
     </div>
@@ -1506,6 +1534,30 @@
         <span data-it>Scopri la location</span>
         <span data-en>Discover the venue</span>
       </a>
+    </div>
+  </div>
+
+  <!-- EN: Useful Travel Information -->
+  <div data-en style="max-width:900px; margin:3rem auto 0; padding:0 1rem;">
+    <div style="border-top:1px solid var(--gold); padding-top:2.5rem;">
+      <h3 style="font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.2em; color:var(--gold); margin-bottom:1.2rem;">USEFUL TRAVEL INFORMATION</h3>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; line-height:1.7; color:var(--navy); margin-bottom:1.2rem;">L'Albereta is located in Erbusco, in the Franciacorta wine region, near Lake Iseo.</p>
+      <h4 style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.15em; color:var(--navy); margin-bottom:0.5rem;">AIRPORTS</h4>
+      <ul style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; color:var(--navy); line-height:1.9; margin-bottom:1.2rem; padding-left:1.2rem;">
+        <li>Bergamo Orio al Serio — 30 km</li>
+        <li>Milan Linate — 73 km</li>
+        <li>Milan Malpensa — 111 km</li>
+        <li>Verona Villafranca — 80 km</li>
+      </ul>
+      <h4 style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.15em; color:var(--navy); margin-bottom:0.5rem;">TRAIN STATIONS</h4>
+      <ul style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; color:var(--navy); line-height:1.9; margin-bottom:1.2rem; padding-left:1.2rem;">
+        <li>Rovato — 7 km</li>
+        <li>Brescia — 26 km</li>
+      </ul>
+      <h4 style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.15em; color:var(--navy); margin-bottom:0.5rem;">BY CAR</h4>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; line-height:1.7; color:var(--navy); margin-bottom:1.2rem;">L'Albereta is easily reached from the A4 motorway, connecting Brescia, Bergamo, Milan, Turin and Venice. The A1 motorway connects the area with Bologna and Florence, approximately 2–3 hours away.</p>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; line-height:1.7; color:var(--navy); font-style:italic; margin-bottom:1.5rem;"><strong>Important:</strong> We recommend arranging taxis, transfers or rental cars in advance, especially for the wedding evening and late returns.</p>
+      <a class="location-btn" href="https://www.google.com/maps/search/?api=1&query=L%27Albereta%20Relais%20%26%20Chateaux%20Erbusco" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS</a>
     </div>
   </div>
 </section>
@@ -1594,19 +1646,18 @@
   </div>
 </section>
 
-<!-- HUNT TEASER — nascosto di default, visibile solo con ?hunt=on nell'URL -->
-<div id="hunt-teaser" style="display:none;">
-  <div class="hunt-text" data-it>🍋 C'è un tesoro nascosto in questo sito...</div>
-  <div class="hunt-text" data-en>🍋 There's a hidden treasure somewhere on this site...</div>
-  <a href="hunt.html" class="hunt-btn" data-it>TROVA IL TESORO</a>
-  <a href="hunt.html" class="hunt-btn" data-en>FIND THE TREASURE</a>
-</div>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-names">Simone & Bridget</div>
   <div class="footer-date">1 · VIII · 2026 · FRANCIACORTA</div>
   <div class="footer-heart">♥</div>
+  <div style="margin-top:2rem;">
+    <a href="https://drive.google.com/drive/folders/1TkyWixbu7lVwvcCsnAq4v1P2iUqx0x8p?usp=sharing"
+       class="album-btn" target="_blank" rel="noopener">
+      <span data-it>GUARDA LE FOTO DEL MATRIMONIO</span>
+      <span data-en>VIEW THE WEDDING PHOTOS</span>
+    </a>
+  </div>
 </footer>
 
 <!-- MUSIC PLAYER -->
@@ -1825,18 +1876,6 @@ document.getElementById('rsvp-form').addEventListener('submit', async function(e
   }
 });
 
-// ===== HUNT TEASER — visibile solo con ?hunt=on =====
-if (new URLSearchParams(window.location.search).get('hunt') === 'on') {
-  document.getElementById('hunt-teaser').style.display = 'block';
-}
-
-// ===== EASTER EGG: maionese =====
-let typed = '';
-document.addEventListener('keypress', e => {
-  typed += e.key.toLowerCase();
-  if (typed.includes('maionese')) window.location.href = 'hunt.html';
-  if (typed.length > 20) typed = typed.slice(-20);
-});
 </script>
 </body>
 </html>
